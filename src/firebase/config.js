@@ -1,4 +1,4 @@
-import * as firebase from 'firebase/app';
+import firebase from 'firebase/app';
 import 'firebase/storage';//store images
 import 'firebase/firestore'; //database
 
@@ -10,11 +10,12 @@ const firebaseConfig = {
     messagingSenderId: "625357454415",
     appId: "1:625357454415:web:50c9424fe22a496ec2fe3a"
   };
-
-  firebaseConfig.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig); 
+ // firebaseConfig.initializeApp(firebaseConfig);
 
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
+  const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-  export{ projectStorage, projectFirestore }
+  export{ projectStorage, projectFirestore, timestamp }
   
