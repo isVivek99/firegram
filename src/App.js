@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import ImageGrid from './comps/ImageGrid';
 import Modal from './comps/Modal';
+import Signup from './comps/Signup';
 import Title from './comps/Title';
 import UploadForm from './comps/UploadForm';
+import { Container } from 'react-bootstrap';
+import { AuthProvider } from './contexts/AuthContext'
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Dashboard from './Dashboard';
 
 
 
@@ -11,11 +16,27 @@ function App() {
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (
+    
     <div className="App">
-      <Title/>
+      
+      
+        <Container className="d-flex alignitems-center justifycontent-center" style={{ minHeight:"100vh" }}>
+          <div className="w-100" style={{maxWidth:"400px "}}> 
+          <Router>
+           <AuthProvider>
+              <Switch>
+                <Route exact path="/" component={Dashboard} />
+                <Route path="/signup" component={Signup} />
+              </Switch>
+           </AuthProvider>
+          </Router>
+          </div>
+        </Container>    
+        
+      {/* <Title/>
       <UploadForm/>
       <ImageGrid setSelectedImg = {setSelectedImg} />
-      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }   
+      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }    */}
       </div>
   );
 }
