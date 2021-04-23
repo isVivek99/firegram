@@ -8,6 +8,7 @@ import { Container } from 'react-bootstrap';
 import { AuthProvider } from './contexts/AuthContext'
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Dashboard from './Dashboard';
+import Login from './Login';
 
 
 
@@ -20,23 +21,19 @@ function App() {
     <div className="App">
       
       
-        <Container className="d-flex alignitems-center justifycontent-center" style={{ minHeight:"100vh" }}>
+        <Container className="d-flex alignitems-center justifycontent-center mt-5"  style={{ minHeight:"100vh" }}>
           <div className="w-100" style={{maxWidth:"400px "}}> 
           <Router>
            <AuthProvider>
               <Switch>
                 <Route exact path="/" component={Dashboard} />
                 <Route path="/signup" component={Signup} />
+                <Route path="/login" component={Login} />
               </Switch>
            </AuthProvider>
           </Router>
           </div>
         </Container>    
-        
-      {/* <Title/>
-      <UploadForm/>
-      <ImageGrid setSelectedImg = {setSelectedImg} />
-      {selectedImg && <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} /> }    */}
       </div>
   );
 }
