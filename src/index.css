@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 :root{
-  --primary: #efb6b2;
+  --primaryz: #efb6b2;
   --secondary: #4e4e4e;
   --error: #ff4a4a;
 }
@@ -11,12 +11,12 @@ body{
   font-family: "Noto Serif";
   color: var(--secondary);
 }
-.App{
+.App1{
   max-width: 960px;
   margin: 0 auto;
 }
 .title h1{
-  color: var(--primary);
+  color: var(--primaryz);
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
@@ -42,18 +42,18 @@ form{
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primaryz);
   border-radius: 50%;
   margin:10px auto;
   line-height: 30px;
-  color: var(--primary);
+  color: var(--primaryz);
   font-weight: bold;
   font-size: 24px;
 
 }
 
 .label:hover{
-  background: var(--primary);
+  background: var(--primaryz);
   color: white;
 }
 
@@ -72,7 +72,7 @@ form{
 /* progress bar styles */
 .progress-bar{
   height: 5px;
-  background: var(--primary);
+  background: var(--primaryz);
   margin-top: 20px;
 }
 
