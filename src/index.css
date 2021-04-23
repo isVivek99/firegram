@@ -39,7 +39,8 @@ form{
   opacity: 0;
 }
 .label{
-  display: block;
+  display: flex;
+  justify-content: ;
   width: 30px;
   height: 30px;
   border: 1px solid var(--primaryz);
@@ -51,9 +52,7 @@ form{
   font-size: 24px;
 
 }
-.span{
-  margin-bottom: 3px;
-}
+
 
 .label:hover{
   background: var(--primaryz);
