@@ -51,10 +51,10 @@ const Login  = ()=>{
                     <Button disabled={loading} className="w-100" type="submit">Log In</Button>
                 </Form>
 
-                <div className="test-credentials">
-                        <h4>test credentials</h4>
-                        <h3>email:</h3>ttt@ttt.com
-                        <h3>password:</h3>password
+                <div className="test-credentials" style={{padding:"1rem", marginBottom:"0.5rem"}}>
+                        <h5 style={{fontWeight:"bold"}}>test credentials</h5>
+                        <h5 >email: <span style={{fontWeight:"bold"}}>ttt@ttt.com</span></h5> 
+                        <h5>password: <span style={{fontWeight:"bold"}}>password</span></h5> 
                         <h6 style={{fontWeight:"bold"}}>(type the password dont copy-paste)</h6>
                     </div>
             
