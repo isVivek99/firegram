@@ -51,6 +51,9 @@ form{
   font-size: 24px;
 
 }
+.span{
+  margin-bottom: 3px;
+}
 
 .label:hover{
   background: var(--primaryz);

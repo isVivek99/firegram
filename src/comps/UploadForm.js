@@ -36,7 +36,7 @@ const UploadForm = ()=>{
         <form>
             <label className="label">
                 <input type="file" onChange={changeHandler}/>
-                <span>+</span>
+                <span className="span">+</span>
              </label>
              <div className="output">
                  {console.log(file)}
