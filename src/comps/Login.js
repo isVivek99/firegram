@@ -49,8 +49,14 @@ const Login  = ()=>{
                     </Form.Group>
 
                     <Button disabled={loading} className="w-100" type="submit">Log In</Button>
-               
                 </Form>
+
+                <div className="test-credentials">
+                        <h4>test credentials</h4>
+                        <h3>email:</h3>ttt@ttt.com
+                        <h3>password:</h3>password
+                        <h6 style={{fontWeight:"bold"}}>(type the password dont copy-paste)</h6>
+                    </div>
             
             </Card.Body>
         </Card>

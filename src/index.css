@@ -123,3 +123,12 @@ form{
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
   border: 3px solid white;
 }
+
+/* login */
+
+.test-credentials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
