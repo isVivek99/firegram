@@ -1,3 +1,17 @@
+## Features:
+1. User Authentication<br/>
+2. User can upload images.<br/>
+3. user can save images.<br/>
+4. user can see his uploaded images.<br/>
+## Features yet to be added
+1. Seperate instance for each user.
+2. password reset
+3. Like,dislike feature
+<hr/>
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
